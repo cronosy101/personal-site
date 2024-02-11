@@ -68,6 +68,26 @@ hr {
   opacity: 1;
 }
 
+.mycorner {
+  animation-duration: 1s;
+  visibility: hidden;
+}
+
+.h1Intro {
+  animation-name: slideUp;
+  animation-duration: 0.5s;
+}
+
+@keyframes slideToLeft {
+  from {
+    transform: translateX(100px);
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translatey(100px);
+  }
+}
 @keyframes rotate {
   75% {
     transform: rotateZ(-360deg);

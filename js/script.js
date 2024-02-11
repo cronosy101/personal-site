@@ -13,9 +13,45 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     setTimeout(function(){
     fadeElement.classList.add('fade');
-    },100);
+    },100);   
 });
+document.addEventListener('DOMContentLoaded', function(){
+    const myCornerElement = document.querySelector('.mycorner');
+    setTimeout(function(){
+        // myCornerElement.style.animationDelay = "6s";
+        myCornerElement.style.visibility = 'visible';
+        myCornerElement.style.animationName= 'slideToLeft'; 
+    },1000);
+   
+})
+// document.addEventListener('DOMContentLoaded', function() {
+//     const myCornerElement = document.getElementById('myCorner');
+//     const myh1IntroElement = document.getElementById('h1Intro');
 
+//     // Delay before showing .mycorner
+//     setTimeout(function() {
+//         myCornerElement.classList.add('slide-left');
+//     }, 1500); 
+
+//     // Delay before showing .h1Intro
+//     setTimeout(function() {
+//         myh1IntroElement.classList.add('slide-up');
+//     }, 1000); 
+// });
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const myCornerElement = document.querySelector('.mycorner');
+//     const myh1IntroElement = document.querySelector('.h1Intro');
+//     setTimeout(function() {
+//         myCornerElement.style.visibility = "visible";
+//     }, 1500); 
+//     setTimeout(function() {
+//         myh1IntroElement.style.visibility = "visible";
+//     }, 1000); 
+// });
+
+  
 
 
 
