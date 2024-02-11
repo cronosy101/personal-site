@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #141516;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}
+
+.navi > a{       
+  display: inline-block;
+}
+
+ul{
+  list-style: none;
+}
+
+#intro {
+  opacity: 0;
+  transition: opacity 5s ease-in-out;
+}
+
+#intro.fade{
+  opacity: 1;
+}
+hr {
+  height: 2px;
+  color: #f3f6f9;
+  background-color: #f3f6f9;
+  border: none;
+}
+.hrchange {
+  position: relative; /* Required for positioning the HR element */
+}
+.hrchange hr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+  height: 2px;
+  margin: 0;
+  background-color: gray; /* Initial color */
+  transition: background-color 0.5s ease; /* Animation transition */
+}
+.hrchange:hover hr {
+  background-color: white; /* Change background color on hover */
+}
+.rotate_animation{
+  // background-color: red;
+  // height: 300px;
+  // width: 300px;
+  // font-size: 200px;
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.e-mailbtn{
+  height: 2.5rem;
+  padding: 0 20px;
+}
+.hidden{
+  opacity: 1;
+}
+@keyframes rotate{
+  75%{transform: rotateZ(-360deg);}
+}
+@media(max-width:767px){
+  #intro,#intro h2,#intro h3{
+    
+    margin: auto;
+    text-align: center;    
+  }
+  .e-mailbtn{
+    width: 100%;
+    height: 2.5rem;
+    
+  }
+}
+@media(max-width:576px){
+  .skills{
+    
+    text-align: center !important;
+  }
+  .navi{    
+    opacity: 0;
+  }
+  .homeBtnBot{
+    opacity: 0;
+  }
+  
+}
+@media(min-width: 577px){
+  .homebtn{
+    opacity: 0;
+  }
+  
+}

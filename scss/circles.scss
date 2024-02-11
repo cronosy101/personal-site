@@ -1,0 +1,50 @@
+.home-box-circles {
+    height: 500px; /* Adjust this height as needed */
+    position: relative;    
+    margin: 0;
+    padding: 0;
+}
+
+.circle, .circle2, .circle3, .circle4 {
+    position: absolute;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #fcfbfa98; /* Use whole pixel values */
+}
+
+.circle {    
+    top: 100px; /* Adjust top and right values as needed */
+    right: -125px;
+    width: 250px;
+    height: 250px;   
+}
+
+.circle2 {    
+    top: -25px;
+    right: -250px;
+    width: 500px;
+    height: 500px;   
+}
+
+.circle3 {    
+    top: -150px;
+    right: -375px;
+    width: 750px;
+    height: 750px;   
+}
+
+.circle4 {    
+    top: -275px;
+    right: -500px;
+    width: 1000px;
+    height: 1000px;   
+}
+
+.starting-color {
+    border-color: transparent;
+}
+
+.color-change {
+    border-color: #555252; /* New color when class is applied */
+    transition: border-color 0.5s ease; /* Apply transition only when class is added */
+}
