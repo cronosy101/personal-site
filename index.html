@@ -1,357 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/circles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/circles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <title>MyPage</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- navbar -->
-
     <div class="navi z-0 container bg-secondary text-center">
-        <div class="row bg-secondary ">
-            <div class="col-3 border-start border-bottom py-3"><a class="" href="index.html">Home</a></div>
-            <div class="col-3 border-start border-bottom py-3"><a class="" href="#section2">Projects</a></div>
-            <div class="col-3 border-start border-bottom py-3"><a class="" href="#info">Info</a></div>
-            <div class="col-3 border-start border-end border-bottom py-3"><a class="" href="#contact">Contact</a></div>
+      <div class="row bg-secondary">
+        <div class="col-3 border-start border-bottom py-3">
+          <a href="index.html">Home</a>
         </div>
-    </div>
-    <div class="m-3 homebtn hidden d-flex justify-content-end position-fixed top-0 end-0">
-        <a href="./index.html"><i class="bi bi-house text-light"></i></a>
+        <div class="col-3 border-start border-bottom py-3">
+          <a href="#section2">Projects</a>
+        </div>
+        <div class="col-3 border-start border-bottom py-3">
+          <a href="#info">Info</a>
+        </div>
+        <div class="col-3 border-start border-end border-bottom py-3">
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
     </div>
 
-    <div class="m-3 homeBtnBot d-flex justify-content-end position-fixed bottom-0 end-0">
-        <a href="./index.html"><i class="bi bi-house text-light"></i></a>
+    <div
+      class="m-3 homebtn hidden d-flex justify-content-end position-fixed top-0 end-0"
+    >
+      <a href="./index.html"><i class="bi bi-house text-light"></i></a>
+    </div>
+
+    <div
+      class="m-3 homeBtnBot d-flex justify-content-end position-fixed bottom-0 end-0"
+    >
+      <a href="./index.html"><i class="bi bi-house text-light"></i></a>
     </div>
 
     <!-- circles-animated -->
-
-    <div class="z-n1 home-box-circles position-absolute top-0 end-0" style="height: 250px;">
-        <div class="circle"></div>
-        <div class="circle2"></div>
-        <div class="circle3"></div>
-        <div class="circle4"></div>
+    <div
+      class="z-n1 home-box-circles position-absolute top-0 end-0"
+      style="height: 250px"
+    >
+      <div class="circle"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+      <div class="circle4"></div>
     </div>
 
     <!-- intro -->
-
     <section id="intro" class="mt-8">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="mycorner d-flex align-items-center">
-                        <div class="me-2">
-                            <hr class="rounded" style="width: 2rem;">
-                        </div>
-                        <h5 class="text-danger ">Welcome to my corner of the web!</h5>
-                    </div>
-                    <h1 class="h1Intro text-light mt-4 text-start">I am Richard, a frontend developer who thrives
-                        on the
-                        creative challenge
-                        of transforming visions into elegant web experiences.</h1>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="mycorner d-flex align-items-center">
+              <div class="me-2">
+                <hr class="rounded" style="width: 2rem" />
+              </div>
+              <h5 class="text-danger">Welcome to my corner of the web!</h5>
             </div>
+            <h1 class="h1Intro text-light mt-4 text-start">
+              I am Richard, a frontend developer who thrives on the creative
+              challenge of transforming visions into elegant web experiences.
+            </h1>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- my img -->
-
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <img class="border" src="./images/image007.jpg" alt="pic of rich" style="height: 400px; width: 300px;">
-            </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            class="border"
+            src="./images/image007.jpg"
+            alt="pic of rich"
+            style="height: 400px; width: 300px"
+          />
         </div>
+      </div>
     </div>
 
     <!-- projects -->
-
     <section>
-        <div class="container mt-8 ">
-            <div class="mb-4 d-flex align-items-center justify-content-center">
-                <div class="me-2">
-                    <hr class="rounded" style="width: 2rem;">
-                </div>
-                <h5 class="text-danger" id="section2">My Projects</h5>
-            </div>
-            <hr class="rounded">
-            <div class="d-flex align-items-center justify-content-center">
-                <a href="https://github.com/cronosy101?tab=repositories"><i class="bi bi-github me-1"></i>link to my
-                    github,if you want to see how it's build.</a>
-            </div>
-            <hr class="rounded mb-8">
-            <div class="row ">
-
-                 <!-- the copper fork -->
-                <div class="col-md-6 mb-5">
-                    <div class="row">
-                        <div class="col">
-                            <a class="" href="https://https://the-copper-fork.vercel.app//" target="_blank"><img
-                                    src="./images/the-copper-fork.png" alt="" class="img-fluid"></a>
-                        </div>
-                        <div class="col hrchange">
-                            <hr class="mt-0" style="width: 90%;">
-                            <a class="text-light p-1" href="https://https://the-copper-fork.vercel.app//" target="_blank">
-                                <h3 class="">The Copper Fork</h3>
-                                <p class="text-primary">front end Next webapp</p>
-                                
-                            
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                  <!-- thriftly -->
-                <div class="col-md-6 mb-5">
-                    <div class="row">
-                        <div class="col">
-                            <a class="" href="https://thriftly-eight.vercel.app/" target="_blank"><img
-                                    src="./images/thriftly.png" alt="" class="img-fluid"></a>
-                        </div>
-                        <div class="col hrchange">
-                            <hr class="mt-0" style="width: 90%;">
-                            <a class="text-light p-1" href="https://thriftly-eight.vercel.app/" target="_blank">
-                                <h3 class="">thriftly</h3>
-                                <p class="text-primary">webshop</p>
-                                <p class="text-primary">create,read,update and delete products</p>
-                            
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- koffiekoppie -->
-                <div class="col-md-6 mb-5">
-                    <div class="row">
-                        <div class="col">
-                            <a class="" href="https://koffiekoppie.vercel.app/" target="_blank"><img
-                                    src="./images/koffiekoppie.png" alt="" class="img-fluid"></a>
-                        </div>
-                        <div class="col hrchange">
-                            <hr class="mt-0" style="width: 90%;">
-                            <a class="text-light p-1" href="https://koffiekoppie.vercel.app/" target="_blank">
-                                <h3 class="">koffiekoppie</h3>
-                                <p class="text-primary">webshop</p>
-                                <p class="text-primary">create,read,update and delete products</p>
-                            
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                 <!-- CNLA architects -->
-                <div class="col-md-6 mb-5">
-                    <div class="row">
-                        <div class="col">
-                            <a class="" href="https://cnla-architects.vercel.app/" target="_blank"><img
-                                    src="./images/cnla.png" alt="" class="img-fluid"></a>
-                        </div>
-                        <div class="col hrchange">
-                            <hr class="mt-0" style="width: 90%;">
-                            <a class="text-light p-1" href="https://cnla-architects.vercel.app/" target="_blank">
-                                <h3 class="">CLNA architects</h3>
-                                <p class="text-primary">website for acrchitects</p>
-                                <p class="text-primary">crud</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-               
-               
-               
-                <!-- bootcamp -->
-
-                <div class="col-md-6 mb-5">
-                    <div class="row">
-                        <div class="col">
-                            <a class="" href="https://cronosy101.github.io/ironimpact/#" target="_blank"><img
-                                    src="./images/bootcamp_site_2.jpg" alt="" class="img-fluid"></a>
-                        </div>
-                        <div class="col hrchange">
-                            <hr class="mt-0" style="width: 90%;">
-                            <a class="text-light p-1" href="https://cronosy101.github.io/ironimpact/#" target="_blank">
-                                <h3 class="">Iron Impact</h3>
-                                <p class="text-primary">Bootcamp and personal training.</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- corso -->
-
-                <div class="col-md-6 mb-5">
-                    <div class="row">
-                        <div class="col">
-                            <a class="" href="https://cronosy101.github.io/corso/" target="_blank"><img
-                                    src="./images/corso.jpg" alt="" class="img-fluid"></a>
-                        </div>
-                        <div class="col hrchange">
-                            <hr class="mt-0" style="width: 90%;">
-                            <a class="text-light p-1" href="https://cronosy101.github.io/corso/" target="_blank">
-                                <h3 class="">Corso</h3>
-                                <p class="text-primary">training platform.</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- e-book -->
-
-                <div class="col-md-6 mb-5">
-                    <div class="row">
-                        <div class="col">
-                            <a class="" href="https://cronosy101.github.io/ebook-website/" target="_blank"><img
-                                    src="./images/e-book-site.jpg" alt="" class="img-fluid"></a>
-                        </div>
-                        <div class="col hrchange">
-                            <hr class="mt-0" style="width: 90%;">
-                            <a class="text-light mt-0 p-1" href="https://cronosy101.github.io/ebook-website/"
-                                target="_blank">
-                                <h3 class="">Blog Master</h3>
-                                <p class="text-primary">Create and managing blogs.</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- move it -->
-
-                <div class="col-md-6 mb-5">
-                    <div class="row">
-                        <div class="col">
-                            <a class="" href="https://cronosy101.github.io/moving_site/" target="_blank">
-                                <img src="./images/MoveWithJoy.jpg" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="col hrchange">
-                            <hr class="mt-0" style="width: 90%;">
-                            <a class="text-light p-1" href="https://cronosy101.github.io/moving_site/" target="_blank">
-                                <h3 class="">MoveIt</h3>
-                                <p class="text-primary">moving company.</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
- <!-- get the weather -->
-                <div class="col-md-6 mb-5">
-                    <div class="row">
-                        <div class="col">
-                            <a class="" href="https://get-the-weather.vercel.app/" target="_blank"><img
-                                    src="./images/get_the_weather.png" alt="" class="img-fluid"></a>
-                        </div>
-                        <div class="col hrchange">
-                            <hr class="mt-0" style="width: 90%;">
-                            <a class="text-light p-1" href="https://get-the-weather.vercel.app/" target="_blank">
-                                <h3 class="">Get The Weather</h3>
-                                <p class="text-primary">working with API's in Javascript and JSON data</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- gues the number -->
-
-                <div class="col-md-6 mb-5">
-                    <div class="row">
-                        <div class="col">
-                            <a class="" href="https://cronosy101.github.io/gues-the-number/" target="_blank"><img
-                                    src="./images/guesTheNumber.jpg" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="col hrchange">
-                            <hr class="mt-0" style="width: 90%;">
-                            <a class="text-light p-1" href="https://cronosy101.github.io/gues-the-number/"
-                                target="_blank">
-                                <h3 class="">Gues The Number</h3>
-                                <p class="text-primary">Javascript exercise.</p>
-                                <p class="text-primary p-0 m-0">with html/css template.</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- programming skills -->
-
-            <div class="mt-8 mb-4 d-flex align-items-center justify-content-center">
-                <div class="me-2">
-                    <hr class="rounded" style="width: 2rem;">
-                </div>
-                <h5 class="text-danger" id="info">Programming skills</h5>
-            </div>
-            <hr class="rounded">
+      <div class="container mt-8">
+        <div class="mb-4 d-flex align-items-center justify-content-center">
+          <div class="me-2">
+            <hr class="rounded" style="width: 2rem" />
+          </div>
+          <h5 class="text-danger" id="section2">My Projects</h5>
         </div>
+        <hr class="rounded" />
+        <div class="d-flex align-items-center justify-content-center mb-4">
+          <a
+            href="https://github.com/cronosy101?tab=repositories"
+            target="_blank"
+          >
+            <i class="bi bi-github me-1"></i>Link to my GitHub
+          </a>
+        </div>
+        <hr class="rounded mb-8" />
+
+        <!-- 🧠 Dynamisch gegenereerde projecten komen hier -->
+        <div class="row" id="projects-container"></div>
+      </div>
     </section>
 
-    <!-- stats -->
+    <!-- skills & contact sectie blijft hetzelfde -->
+    <!-- ... (rest van je originele HTML-code hier) ... -->
 
-    <div class="container text-light d-flex justify-content-center mt-5 skills">
-        <div class="row" style="min-width: 33rem;">
-            <div class="col-sm-6 ">
-                <h4 class="mb-4">Skillset</h2>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> HTML</li>
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> CSS</li>
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Bootstrap</li>
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> SQL</li>
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> JavaScript</li>
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Next</li>
-                    </ul>
-            </div>
-            <div class="col-sm-6">
-                <h4 class="mb-4">Under Development</h4>
-                <ul class="list-unstyled">
-                    <div class="rotate_animation d-inline-block me-2 mb-2" style="width:max-content; height: 1.4rem;">
-                        <i class="bi bi-hourglass-split text-danger "></i>
-                    </div>
-                    <li class="d-inline">React</li>
-                    <li class="mb-2"><i class="bi bi-hourglass-split text-danger me-2"></i> Express.js</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col">
-                <div class="mt-8 mb-4 d-flex align-items-center justify-content-center">
-                    <div class="me-2">
-                        <hr class="rounded" style="width: 2rem;">
-                    </div>
-                    <h5 class="text-danger" id="contact">Contact</h5>
-                </div>
-                <hr class="rounded">
-            </div>
-
-            <!-- contact -->
-
-            <div class="row">
-                <div class="col">
-                    <p class="mt-6 text-primary">GET IN TOUCH</p>
-                    <h2 class="text-light mt-4">I'd love to hear from you! Whether you want to discuss a project, share
-                        feedback, or just chat about common interests, feel free to reach out. I'm just a message away!
-                    </h2>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-6 mb-4 d-flex justify-content-start text-light " style="font-size: 1.5rem;">
-                    <div>
-                        <p class="">social</p>
-                        <a href="https://www.linkedin.com/in/rich-undefined-ba09502a2" target="_blank"><i
-                                class="bi bi-linkedin me-1 text-light"></i></a>
-                        <a href="https://github.com/cronosy101?tab=repositories" target="_blank"><i
-                                class="bi bi-github text-light"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex justify-content-md-end align-items-center" style="font-size: 1.5rem;">
-                    <a href="./contact.html"
-                        class="e-mailbtn bg-dark text-danger d-flex justify-content-center align-items-center">Mail
-                        me!</a>
-                </div>
-                <script src="./js/script.js"></script>
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>

@@ -1,90 +1,75 @@
+// ✅ --- ANIMATIES ---
 document.addEventListener('DOMContentLoaded', function () {
-    var circles = document.querySelectorAll('.circle, .circle2, .circle3, .circle4, .circle5');
-    let fadeElement = document.getElementById('intro');
+  const circles = document.querySelectorAll(
+    '.circle, .circle2, .circle3, .circle4, .circle5'
+  );
+  const fadeElement = document.getElementById('intro');
+  const delay = 500;
 
-    // Set the base delay for the first circle
-    var delay = 500;
+  circles.forEach(function (circle, index) {
+    circle.classList.add('starting-color');
+    setTimeout(function () {
+      circle.classList.add('color-change');
+    }, delay + index * 500);
+  });
 
-    circles.forEach(function (circle, index) {
-        circle.classList.add('starting-color');
-        setTimeout(function () {
-            circle.classList.add('color-change');
-        }, delay + index * 500); // Add 500 milliseconds of delay for each subsequent circle
-    });
-    setTimeout(function(){
+  setTimeout(function () {
     fadeElement.classList.add('fade');
-    },100);   
+  }, 100);
 });
-document.addEventListener('DOMContentLoaded', function(){
-    const myCornerElement = document.querySelector('.mycorner');
-    setTimeout(function(){
-        // myCornerElement.style.animationDelay = "6s";
-        myCornerElement.style.visibility = 'visible';
-        myCornerElement.style.animationName= 'slideToLeft'; 
-    },1000);
-   
-})
-// document.addEventListener('DOMContentLoaded', function() {
-//     const myCornerElement = document.getElementById('myCorner');
-//     const myh1IntroElement = document.getElementById('h1Intro');
 
-//     // Delay before showing .mycorner
-//     setTimeout(function() {
-//         myCornerElement.classList.add('slide-left');
-//     }, 1500); 
+document.addEventListener('DOMContentLoaded', function () {
+  const myCornerElement = document.querySelector('.mycorner');
+  setTimeout(function () {
+    myCornerElement.style.visibility = 'visible';
+    myCornerElement.style.animationName = 'slideToLeft';
+  }, 1000);
+});
 
-//     // Delay before showing .h1Intro
-//     setTimeout(function() {
-//         myh1IntroElement.classList.add('slide-up');
-//     }, 1000); 
-// });
+// ✅ --- PROJECTEN LADEN UIT JSON ---
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('projects-container');
+  if (!container) return; // alleen uitvoeren op pagina's met projecten
 
+  // Optioneel: tijdelijke tekst terwijl de data laadt
+  container.innerHTML = `<p class="text-center text-light">Loading projects...</p>`;
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const myCornerElement = document.querySelector('.mycorner');
-//     const myh1IntroElement = document.querySelector('.h1Intro');
-//     setTimeout(function() {
-//         myCornerElement.style.visibility = "visible";
-//     }, 1500); 
-//     setTimeout(function() {
-//         myh1IntroElement.style.visibility = "visible";
-//     }, 1000); 
-// });
+  fetch('../data/projects.json')
+    .then((res) => {
+      if (!res.ok) throw new Error('Failed to load projects.json');
+      return res.json();
+    })
+    .then((projects) => {
+      const html = projects
+        .map((project) => {
+          const descriptions = project.description
+            .map((text) => `<p class="text-primary">${text}</p>`)
+            .join('');
 
-  
+          return `
+            <div class="col-md-6 mb-5">
+              <div class="row">
+                <div class="col">
+                  <a href="${project.url}" target="_blank">
+                    <img src="${project.image}" alt="${project.title}" class="img-fluid">
+                  </a>
+                </div>
+                <div class="col hrchange">
+                  <hr class="mt-0" style="width: 90%;">
+                  <a class="text-light p-1" href="${project.url}" target="_blank">
+                    <h3>${project.title}</h3>
+                    ${descriptions}
+                  </a>
+                </div>
+              </div>
+            </div>`;
+        })
+        .join('');
 
-
-
-//////loop for continues circles
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     var circles = document.querySelectorAll('.circle, .circle2, .circle3, .circle4, .circle5');
-//     let fadeElement = document.getElementById('intro');
-
-//     function startAnimation() {
-//         // Set the base delay for the first circle
-//         var delay = 500;
-
-//         circles.forEach(function (circle, index) {
-//             circle.classList.add('starting-color');
-//             setTimeout(function () {
-//                 circle.classList.add('color-change');
-//             }, delay + index * 500); // Add 500 milliseconds of delay for each subsequent circle
-//         });
-
-//         setTimeout(function () {
-//             fadeElement.classList.add('fade');
-//         }, 100);
-
-//         // After animation completes, call the function again for looping
-//         setTimeout(function () {
-//             circles.forEach(function (circle) {
-//                 circle.classList.remove('starting-color', 'color-change');
-//             });
-//             fadeElement.classList.remove('fade');
-//             startAnimation(); // Recursive call
-//         }, delay + circles.length * 500 + 100); // Total duration of the animation + 100ms buffer
-//     }
-
-//     startAnimation(); // Initial call to start the animation
-// });
+      container.innerHTML = html;
+    })
+    .catch((err) => {
+      console.error('Error loading projects:', err);
+      container.innerHTML = `<p class="text-danger text-center">Failed to load projects.</p>`;
+    });
+});

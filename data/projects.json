@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Homely",
+    "url": "https://homely-iota.vercel.app/",
+    "image": "./images/homely.png",
+    "description": ["Front-end Next webapp"]
+  },
+  {
+    "title": "The Copper Fork",
+    "url": "https://the-copper-fork.vercel.app/",
+    "image": "./images/the-copper-fork.png",
+    "description": ["Front-end Next webapp"]
+  },
+  {
+    "title": "CLNA Architects",
+    "url": "https://cnla-architects.vercel.app/",
+    "image": "./images/cnla.png",
+    "description": ["Website for architects", "CRUD functionality"]
+  },
+
+  {
+    "title": "Koffiekoppie",
+    "url": "https://koffiekoppie.vercel.app/",
+    "image": "./images/koffiekoppie.png",
+    "description": ["Webshop", "Create, read, update and delete products"]
+  },
+  {
+    "title": "Thriftly",
+    "url": "https://thriftly-eight.vercel.app/",
+    "image": "./images/thriftly.png",
+    "description": ["Webshop", "Create, read, update and delete products"]
+  },
+
+  {
+    "title": "Iron Impact",
+    "url": "https://cronosy101.github.io/ironimpact/#",
+    "image": "./images/bootcamp_site_2.jpg",
+    "description": ["Bootcamp and personal training"]
+  },
+  {
+    "title": "Corso",
+    "url": "https://cronosy101.github.io/corso/",
+    "image": "./images/corso.jpg",
+    "description": ["Training platform"]
+  },
+  {
+    "title": "Blog Master",
+    "url": "https://cronosy101.github.io/ebook-website/",
+    "image": "./images/e-book-site.jpg",
+    "description": ["Create and manage blogs"]
+  },
+  {
+    "title": "MoveIt",
+    "url": "https://cronosy101.github.io/moving_site/",
+    "image": "./images/MoveWithJoy.jpg",
+    "description": ["Moving company website"]
+  },
+  {
+    "title": "Get The Weather",
+    "url": "https://get-the-weather.vercel.app/",
+    "image": "./images/get_the_weather.png",
+    "description": ["Working with APIs in JavaScript and JSON data"]
+  },
+  {
+    "title": "Guess The Number",
+    "url": "https://cronosy101.github.io/gues-the-number/",
+    "image": "./images/guesTheNumber.jpg",
+    "description": ["JavaScript exercise", "HTML/CSS template"]
+  }
+]
